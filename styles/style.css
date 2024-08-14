@@ -157,6 +157,11 @@ margin-top: 20px;
     justify-content: space-between;
 
 }
+
+
+/* habit section css */
+
+
 .change-habit-section{
     margin:0 auto;
     width: 1400px;
@@ -191,10 +196,171 @@ margin-top: 20px;
 }
 
 
-@media screen and (max-width: 576px) {
-.header-section {
+/* Extra mile section css */
+
+
+.extra-mile-div {
+    width: 70%;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+    background-color: rgb(39, 39, 39);
+}
+
+.run-image {
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: none;
+    object-position: 70% 25%;
+}
+
+.extra-mile-h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-mile-p {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.text-part {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.btn-three {
+    width: 320px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    background-color: #fa6641;
+    border: 2px solid #fa6641;
+}
+
+
+/* bmi section css */
+
+
+table , th , td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+table{
+    width: 350px;
+    height: 250px;
+    text-align: center;
+
+}
+th{
+    color: white;
+}
+td{
+    color: gray;
+}
+.bmi-input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.3em;
+    background-color: rgb(60, 60, 60);
+    border: none;
+
+}
+.activity-factor{
+    width: 670px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.3em;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    color: gray;
+    margin-bottom: 40px;
+
+}
+.gender{
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.3em;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    color: gray;
+}
+.input-value{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+.bmi-div{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.bmi-h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4em;
+    margin: 0;
+    margin-top: 70px;
+}
+.bmi-p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+    margin-bottom: 70px;
+
+}
+.left-h1 , .right-h1{
+ font-size: 2.1em;
+}
+.right-p{
+    font-size: 1.3em;
+    width: 600px;
+}
+.bmi-section{
+    padding: 0;
     width: 100%;
-    max-width: 576px; 
+    background-color:rgb(39, 39, 39);
+
+}
+.btn-four{
+    width: 320px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    background-color: #fa6641;
+    border: 2px solid #fa6641;
+    margin-bottom: 20px;
+}
+
+/* responsive css part below */
+
+
+@media screen and (max-width: 576px) {
+
+
+/* header responsive css */
+
+header{
+    width: 576px;
+}
+.header-section {
+    width: 576px; 
 }
 .header-nav{
     display: none;
@@ -214,7 +380,7 @@ margin-top: 20px;
     font-size: 1.5em;
 }
 .three-lines{
-    display:flex;
+    display: grid;
 }
 .heading{
     justify-content: space-evenly;
@@ -255,11 +421,12 @@ margin-top: 20px;
     transform: translate(280px , -600px);
 }
 
-/* habit section media query */
+
+/* habit section responsive css */
 
 
 .change-habit-section{
-    margin:0 auto;
+
     width: 576px;
     text-align: center;
 }
@@ -287,9 +454,97 @@ margin-top: 20px;
 }
 
 
+/* extra mile responsive css */
+
+.extra-mile-section{
+    width: 576px;
+
+}
+.extra-mile-div {
+    width:90%;
+    height: 850px;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 0px;
+}
+.run-image {
+    object-fit: cover;
+}   
+.extra-mile-h1 {
+    font-size: 3em;
+    width: 70%;
+}
+    
+.extra-mile-p {
+    font-size: 1.3em;
+    width: 370px;
+}    
+.btn-three {
+    width: 380px;
+    height: 60px;
+}
+
+.text-part {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 
 
+/* bmi section responsive */
 
 
+.bmi-input{
+    width: 170px;
+
+}
+.activity-factor{
+    width: 440px;
+
+}
+.gender{
+    width: 190px;
+}
+.input-value{
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.bmi-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.bmi-h1{
+    font-size: 3em;
+    margin-top: 70px;
+}
+
+.left-h1 , .right-h1{
+ font-size: 1.5em;
+}
+.right-p{
+    font-size: 1.3em;
+    width: 400px;
+}
+
+.btn-four{
+    height: 60px;
+
+}
+.bmi-section{
+    width: 576px;
+    background-color:rgb(39, 39, 39);
+}
+.bmi-p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 70px;
+    width: 80%;
+
+}
 }
 
