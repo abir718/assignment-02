@@ -444,13 +444,69 @@ td{
     padding-bottom: 50px;
 }
 hr{
-    margin-top: 50px;
+    margin-top: 30px;
     opacity: 0.3;
 }
 .copyright-p{
     font-size: 1.3em;
     text-align: center;
     margin-top: 50px;
+}
+
+
+/* membership section css */
+
+
+.membership-h1{
+    font-size: 4em;
+    margin: 0;
+}
+.membership-p{
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+.package-h1-two{
+    font-size: 5em;
+    font-weight: 400;
+    margin: 0;
+}
+.package-h1{ 
+    padding-top: 50px;  
+}
+.package-p{
+    font-size: 1.3em;
+}
+.package-button{
+    width: 320px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    background-color: #fa6641;
+    border: 2px solid #fa6641;
+    margin-bottom: 20px;
+}
+.hr{
+    width: 340px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.package-one , .package-two , .package-three{
+    width: 400px;
+    height: 600px;
+    background-color:rgb(34, 34, 34);
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+.package-div{
+    display: flex;
+    justify-content: space-between;
+}
+.membership-div{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
 }
 
 
@@ -478,7 +534,6 @@ header{
     align-items: start;
 }
 .header-text{
-
     width: 300px;
     font-size: 3em;
 }
@@ -705,6 +760,50 @@ hr{
     width: 80%;
 }
 
+
+/* membership section responsive css */
+
+
+.membership-h1{
+    font-size: 2em;
+    margin: 0;
+}
+.membership-p{
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+.package-h1-two{
+    font-size: 5em;
+    font-weight: 400;
+    margin: 0;
+}
+.package-h1{ 
+    padding-top: 50px;  
+}
+.package-p{
+    font-size: 1.3em;
+}
+.package-button{
+    width: 320px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    background-color: #fa6641;
+    border: 2px solid #fa6641;
+    margin-bottom: 20px;
+}
+
+.package-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.membership-div{
+    width: 100%;
+}
+.membership-section{
+    width: 576px;
+}
 
 }
 
