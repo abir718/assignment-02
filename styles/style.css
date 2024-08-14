@@ -322,7 +322,8 @@ td{
     text-align: center;
     margin: 0 auto;
     font-size: 1.3em;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 
 }
 .left-h1 , .right-h1{
@@ -335,7 +336,6 @@ td{
 .bmi-section{
     padding: 0;
     width: 100%;
-    background-color:rgb(39, 39, 39);
 
 }
 .btn-four{
@@ -347,7 +347,66 @@ td{
     border: 2px solid #fa6641;
     margin-bottom: 20px;
 }
+.bmi-div{
+    background-color:rgb(39, 39, 39);
 
+}
+
+
+
+/* team section css */
+
+
+.image-one , .image-two , .image-three , .image-four , .image-five , .image-six{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 40px;
+    row-gap: 40px;
+    background-color:rgb(39, 39, 39);
+    justify-content: center;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.team-section{
+    margin:0 auto;
+
+}
+.team-text{
+    text-align: center;
+}
+.image-one-h1{
+    position: absolute;
+    transform: translate(0 , -90px);
+    margin-left: 10px;
+}
+.image-one-p{
+    position: absolute;
+    transform: translate(0 , -50px);
+    margin-left: 10px;
+    color: rgb(168, 168, 168);
+}
+.team-h1{
+    font-size: 4em;
+    margin: 0;
+}
+.team-p{
+    font-size: 1.3em;
+
+}
+.team-div{
+    width: 1300px;
+    margin-top: 80px;
+
+}
 /* responsive css part below */
 
 
@@ -536,7 +595,7 @@ header{
 }
 .bmi-section{
     width: 576px;
-    background-color:rgb(39, 39, 39);
+
 }
 .bmi-p{
     text-align: center;
@@ -546,5 +605,35 @@ header{
     width: 80%;
 
 }
+
+
+/* team section responsive css */
+
+.trainer-one , .trainer-four{
+display: none;
 }
+.team-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-section{
+    margin:0 auto;
+    width: 576px;
+    margin-top: 80px;
+}
+.team-h1{
+    font-size: 2.5em;
+
+}
+.team-div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+}
+
+
 
